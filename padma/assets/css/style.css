@@ -1,0 +1,2026 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Ambidextrousbd
+* Template Name : Abirvab | One Page Multipurpose Html Template
+* File          : Abirvab main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+/* INDEX
+----------------------------------------------------------------------------------------
+
+01. General css
+
+02. Navigation area css
+
+03. Slider area css
+
+04. About area css
+
+05. Skill area css
+
+06. Service area css
+
+07. Portfolio/work area css
+
+08. Team area css
+
+09. Fun facts area css
+
+10. Pricing area css
+
+11. Testimonial area css
+
+12. News area css
+
+13. Video area css
+
+14. Clients area css
+
+15. Subscribe area css
+
+16. Contact area css
+
+17. Google map area css
+
+18. Social area css
+
+19. footer area css
+
+20. Back to top Button area css
+
+-------------------------------------------------------------------------------------- */
+
+/* Google Fonts lato and open sans */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700,900|Open+Sans");
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #000;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+p {
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+a:hover {
+  color: #ffaf00;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0 none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn,
+input[type="submit"] {
+  display: inline-block;
+  background: #000;
+  padding: 10px 25px;
+  font-weight: 300;
+  border-radius: 0px;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  color: #fff;
+
+  border: none;
+  font-family: "Lato";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn.btn-trnsp {
+  background: #ffaf00;
+  border: 1px solid #ffaf00;
+  color: #fff;
+}
+
+.btn-big {
+  border: 2px solid #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.btn.btn-trnsp:hover {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+
+.section-big {
+  padding: 95px 0px;
+}
+
+.padding-top {
+  padding-top: 95px;
+}
+
+.padding-bottom {
+  padding-bottom: 95px;
+}
+
+.section-small {
+  padding: 45px 0px;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title.white h2 span {
+  color: #fff;
+}
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 25px;
+  line-height: 30px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #ffaf00;
+  text-align: left;
+}
+.boot-padding {
+  padding: 0;
+}
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: 0px;
+  background-color: #ffaf00;
+}
+
+.section-title h2 span {
+  color: #2d3239;
+  margin-left: 10px;
+}
+
+.section-title p {
+  margin-top: 25px;
+  text-align: left;
+}
+
+/* preloader css */
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-image: url(img/preloader.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.top-bar {
+  position: relative;
+  height: 80px;
+  z-index: 2;
+  color: #000;
+  background-image: url(img/scale.png);
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+.tmail,
+.tphone,
+.tsocial {
+  float: left;
+  width: 33.33%;
+  line-height: 60px;
+  margin-top: 20px;
+}
+.top-bar span {
+  margin-right: 10px;
+}
+
+.tphone {
+  text-align: center;
+}
+
+.tsocial {
+  text-align: right;
+}
+
+.tsocial a {
+  color: #000;
+}
+
+.tsocial a:hover {
+  color: #ffaf00;
+}
+
+.tsocial a i.fa {
+  font-size: 21px;
+  margin-left: 10px;
+}
+
+.menu-area.navbar-fixed-top {
+  background-color: #ffaf00;
+  top: 80px;
+  height: 70px;
+  padding-top: 12px;
+}
+
+.menu-area.navbar-fixed-top.sticky-menu {
+  top: 0px;
+    height: 62px;
+    background: #ffaf00;
+    padding-top: 6px;
+}
+
+.sticky-menu {
+  box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.mainmenu {
+  /* padding-top: 6px; */
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+/*.sticky-menu .mainmenu {
+    padding-top: 0px;
+}*/
+
+.navbar {
+  margin-bottom: 0;
+  border: 0px;
+}
+
+/*.sticky-menu .navbar li a {
+    padding-top: 8px;
+}*/
+
+/* .navbar-brand {
+    padding: 0;
+    height: 17px;
+} */
+
+.navbar-brand svg {
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  margin-top: -7px;
+  margin-left: 55px;
+}
+
+.navbar-brand {
+  padding: 1px;
+}
+.sticky-menu .navbar-brand svg {
+  display: block;
+  max-width: 180px;
+}
+.navbar-brand:hover {
+  color: #82b541;
+}
+
+.navbar-nav li {
+  display: block;
+  position: relative;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  font-weight: 900;
+  font-family: "Lato";
+  font-size: 14px;
+  padding-top: 13px;
+}
+.sticky-menu .navbar li a {
+  padding-top: 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+  background: none;
+}
+
+.mainmenu .navbar-nav li.active a {
+  color: #ffaf00;
+  background-color: #fff;
+}
+
+/*Dropdown Css*/
+.navbar-nav > li.dropdown:hover > a,
+.navbar-nav > li.dropdown:hover > a:hover,
+.navbar-nav > li.dropdown:hover > a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  li.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+.navbar-nav .dropdown-menu li a {
+  padding: 10px;
+  color: #ffaf00;
+}
+
+/* Mobile Nav css */
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Slider area css
+* -------------------------------------------------------------------------------------- */
+
+/* Home carseoul
+--------------------------- */
+#slider,
+#slider .carousel,
+#slider .carousel .carousel-inner,
+#slider .carousel .carousel-inner .item {
+  min-height: 300px;
+}
+
+#slider .main-container {
+  padding: 0;
+}
+
+#slider .carousel-indicators {
+  bottom: 30px;
+}
+
+#slider .carousel-indicators li {
+  width: 12px;
+  height: 4px;
+  border: 1px solid #ffaf00;
+  border-radius: 0px;
+  background: transparent;
+  margin: 0px;
+  margin-left: 7px;
+}
+#slider .carousel-indicators li.active {
+  background: #ffaf00;
+}
+
+#slider .carousel .item {
+  min-height: 425px;
+  height: 100%;
+  width: 100%;
+}
+
+#slider .carousel .item:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#slider .carousel-control {
+  text-shadow: none;
+}
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+  -ms-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.right.carousel-control img,
+.left.carousel-control img {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -26px;
+  padding: 20px 10px;
+}
+
+.carousel-control img:hover {
+  background: #82b541;
+}
+
+.left.carousel-control img {
+  left: 10px;
+}
+
+.right.carousel-control img {
+  right: 10px;
+}
+
+.carousel-control {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.intro-text {
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.intro-text .title {
+  text-align: center;
+  display: table;
+  margin: auto;
+  padding: 30px 20px;
+}
+p.slide-caption {
+  font-size: 5vw;
+  line-height: 6vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  font-family: lato;
+}
+.intro-text h2 {
+  font-size: 4vw;
+  line-height: 5vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  /*float: left;*/
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.intro-text h1 {
+  text-transform: uppercase;
+  font-size: 6vw;
+  font-weight: 900;
+  margin: 0;
+  color: #fff;
+  line-height: 7vw;
+}
+
+@media (max-width: 768px) {
+  .intro-text h2 {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .intro-text h1 {
+      font-size: 8vw;
+      line-height: 10vw;
+  }
+}
+
+.intro-text a.btn.btn-trnsp.btn-big {
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+.intro-text a.btn.btn-trnsp.btn-big:hover {
+  background-color: #000;
+  border-color: #ffaf00;
+}
+
+#slider .carousel-indicators {
+  bottom: 20px;
+}
+
+/* Slide Background Image */
+#slider .slide1 {
+  background-image: url(img/01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#slider .slide2 {
+  background-image: url(img/02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#slider .slide3 {
+  background-image: url(img/03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                               04. About area css
+* ---------------------------------------------------------------------------------------*/
+
+.about-area {
+  background-color: #fff;
+  background-image: url(img/vector.png);
+  background-repeat: repeat-x;
+}
+
+.about-featured {
+  margin-right: 30px;
+}
+
+@media (max-width: 991px) {
+  .about-featured {
+    margin-bottom: 30px;
+  }
+  .about-featured img {
+    width: 100%;
+  }
+}
+
+.about-details {
+  margin-bottom: 25px;
+}
+
+.about-details h3 {
+  margin-top: 0px;
+  color: #000;
+  font-size: 20px;
+}
+.about-details span {
+  color: #ffaf00;
+}
+
+.about-title {
+  margin-top: 15px;
+}
+
+ul.circle li {
+  margin-top: 7px;
+  margin-left: 30px;
+  list-style: none;
+}
+
+ul.circle li {
+  line-height: 25px;
+  position: relative;
+}
+
+ul.circle li:before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: -30px;
+  top: 50%;
+  margin-top: -5px;
+  border: 2px solid #ffaf00;
+  border-radius: 50px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border-width: 0;
+  border: none;
+}
+
+.nav-tabs li a {
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  padding-right: 38px;
+}
+.nav-tabs > li > a {
+  border-bottom: 3px solid #000 !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover {
+  border-bottom: 3px solid #ffaf00 !important;
+  color: #ffaf00 !important;
+}
+
+.tab-pane {
+  padding: 15px 0;
+}
+
+.circle {
+  margin-left: 20px;
+}
+
+@media (min-width: 1199px) {
+  .about-title {
+    max-width: 480px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   06. Service area css
+* --------------------------------------------------------------------------------------- */
+
+.service-area .section-title {
+  margin-bottom: 30px;
+}
+.home-services .service-box {
+  padding: 15px 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+@media (max-width: 991px) {
+  .service-area {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-services .service-box {
+  }
+}
+
+.home-services .service-box i.fa {
+  color: #ffaf00;
+  margin: 10px 0px;
+  font-size: 36px;
+}
+.home-services .service-box h3 {
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 10px;
+}
+.home-services .service-box:hover {
+  background: #ffaf00;
+  /*background-image: linear-gradient(to right,rgba(167, 73, 221, 1), rgba(75, 84, 223, 1) );
+	color: #fff;*/
+}
+
+.home-services .service-box:hover.service-box h3 {
+  color: #2d3239;
+}
+
+.home-services .service-box:hover.service-box i.fa {
+  color: #fff;
+}
+
+.featured-image {
+  margin-top: 89px;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                               07. Portfolio/work area css
+* --------------------------------------------------------------------------------------- */
+
+.works-area {
+}
+
+.portfolio .mix {
+  display: none;
+}
+
+.filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filters li {
+  display: inline-block;
+  margin: 0px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.filters li.active {
+  color: #ffaf00;
+}
+
+.work-items .item {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.work-items .item img {
+  width: 100%;
+  transition: 0.8s ease-out;
+}
+
+.work-items .overlay {
+  background-color: rgba(255, 175, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+  -moz-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.work-items .item:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.work-items .item:hover img {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.work-items .overlay i.fa {
+  font-size: 36px;
+  color: #fff;
+  position: absolute;
+  padding: 10px 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+}
+
+.work-items .overlay h2 {
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                08. Team area css
+* --------------------------------------------------------------------------------------- */
+.team-member {
+  text-align: center;
+  transition: 0.3s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.member-image {
+}
+
+.member-image img {
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.member-info {
+  transition: 0.3s ease-out;
+}
+
+.team-member h3 {
+  margin-bottom: 6px;
+}
+
+.member-info .text-muted {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.member-social a {
+  position: relative;
+  margin: 10px 0px;
+}
+
+.member-social i.fa {
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  color: #000;
+}
+
+.member-hover .center-content {
+  margin-top: 50%;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .member-hover .center-content {
+    margin-top: 30%;
+  }
+}
+
+.member-hover {
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  width: 89%;
+  height: 0;
+  opacity: 0;
+  background: rgba(255, 175, 0, 0.75);
+
+  color: #fff;
+  padding: 30px 15px;
+  transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+
+.team-member:hover .member-hover {
+  opacity: 1;
+  height: 91%;
+}
+
+.team-member h3 {
+  margin-bottom: 6px;
+  color: #2d3239;
+}
+.member-hover .text-muted,
+.member-hover i.fa {
+  color: #fff;
+}
+.member-hover i.fa:hover {
+  color: #000;
+}
+.member-hover .member-social {
+  margin: 15px 8px;
+  background: rgba(255, 175, 0, 1);
+  border: 1px solid #000;
+  padding: 10px;
+  margin-top: -50px;
+}
+.member-hover p {
+  text-align: left;
+}
+.member-hover .text-muted {
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   10. Pricing area css
+* --------------------------------------------------------------------------------------- */
+.price-item {
+  padding: 0 0px 15px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  background: #f1f1f1;
+  border: 1px solid #000;
+}
+.price-item .info {
+  background-color: #2d3239;
+  padding: 23px 0px;
+  color: #fff;
+}
+
+.price-item ul {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.price-item.featured .info {
+  color: #000;
+  background: #ffaf00;
+}
+
+.price-item p.level {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Lato";
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+p.level.hbg {
+}
+
+.price-item p.desc {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.price-item p.price {
+  margin: 0px;
+}
+
+.price-item.featured {
+  background-color: #f1f1f1;
+  color: #2d3239;
+  border: 1px solid #ffaf00;
+}
+
+.price-item p.price .dollar {
+  font-size: 30px;
+  position: relative;
+  top: -30px;
+}
+
+.price-item p.price .number {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Lato";
+}
+
+.price-item .features {
+  margin: 13px 0;
+}
+
+.featured span {
+  color: #2d3239;
+}
+
+.price-item .features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-item a.btn {
+  background-color: #ffaf00;
+  width: 170px;
+}
+
+.price-item a.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.price-item.featured a.btn {
+  background: #000;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                11. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+.testimonial-area {
+  background-image: url(img/testimonial-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+}
+.testimonial-area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.testimonial-area .section-title p {
+  color: #fff;
+}
+
+.testimonial-area .testimonial-list {
+}
+
+.single-testimonial {
+  padding: 0px 200px;
+}
+
+.single-testimonial img {
+  margin-bottom: 25px;
+  border: 1px solid #fff;
+}
+
+.testimonial-content {
+}
+
+.single-testimonial i.fa {
+  font-size: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.single-testimonial p {
+  line-height: 27px;
+  font-size: 18px;
+  margin: 0;
+  color: #ffaf00;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 23px;
+}
+
+.single-testimonial h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.single-testimonial .desg {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.owl-theme .owl-controls {
+  margin-top: 40px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 3px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  border: 1px solid #ffaf00;
+  float: left;
+}
+
+.owl-pagination {
+  width: 80px;
+  margin: auto;
+}
+
+.owl-page.active span {
+  background: #ffaf00;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  font-size: 25px;
+  background: none;
+  padding: 5px;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   12. News area css
+* --------------------------------------------------------------------------------------- */
+.news-meta {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  color: #ffaf00;
+  padding: 0px 0px;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.news-meta span {
+  float: left;
+  margin-right: 15px;
+}
+
+.news-meta span i.fa {
+  margin-right: 4px;
+}
+.news-image {
+  position: relative;
+}
+.news-image img {
+  width: 100%;
+}
+
+.news-content .subtitle {
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: none;
+}
+.blog-date {
+  position: absolute;
+  bottom: 0px;
+  width: 39%;
+  background-color: #2d3239;
+}
+.month {
+  float: left;
+  background: #2d3239;
+  color: white;
+  padding: 5px;
+}
+.date {
+  float: right;
+  background: #ffaf00;
+  color: white;
+  padding: 5px 26px;
+}
+.blog-date h4 {
+  background: #fff;
+  border: 2px solid #64c7da;
+  width: 55px;
+  padding: 8px 0px;
+  text-align: center;
+  color: #86a4e3;
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  font-size: 15px;
+}
+.news-content .subtitle i.fa {
+  color: #82b541;
+}
+
+.news-content .btn {
+  margin-top: 15px;
+  width: 170px;
+}
+
+.news-content .btn:hover {
+  background-color: #ffaf00;
+  background-image: none;
+  color: #fff;
+}
+
+.news-content .button {
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   14. Client area css
+* --------------------------------------------------------------------------------------- */
+.client-area {
+  background: #e6e6e6;
+}
+.owl-client .item img {
+  width: auto;
+  max-width: 100%;
+}
+.owl-client .item {
+  margin-right: 30px;
+}
+.owl-client .item:hover {
+  border-color: #ffaf00;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                14. Subscribe area css
+* --------------------------------------------------------------------------------------- */
+.subscribe-area {
+  background-color: rgba(255, 175, 0, 1);
+}
+.subscribe-box {
+}
+.subscribe-box h2 {
+  margin-top: 0px;
+  font-size: 22px;
+  color: #000;
+}
+.subscribe-box h2 span {
+  color: #fff;
+}
+.subscribe-box p {
+  color: #2d3239;
+}
+.newsletter-form {
+  margin: auto;
+}
+.newsletter-form input {
+  display: inline-block;
+  height: 50px;
+  width: 70%;
+  padding: 5px 10px;
+  background: #fff;
+  float: left;
+}
+.newsletter-form .mc-submit {
+  height: 50px;
+  width: 10%;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  position: relative;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.newsletter-form .mc-submit:hover {
+  color: #ffaf00;
+}
+.subscribe-area .error {
+  text-align: left;
+}
+
+.mailchimp-alerts {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.mailchimp-alerts div {
+}
+.mailchimp-submitting {
+}
+.mailchimp-success {
+  color: green;
+}
+.mailchimp-error {
+  color: red;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   15. Contact area css
+* --------------------------------------------------------------------------------------- */
+.form-control {
+  display: block;
+  border: 0px;
+  width: 100%;
+  height: 40px;
+  padding: 5px 0px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #000;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.contact-form .form-group input[type="text"]::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+.contact-form .form-group input[type="email"]::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+.contact-form .form-group textarea::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+.form-control:focus {
+  border-color: #000;
+  outline: 0;
+  box-shadow: none;
+}
+
+.contact-form .form-group {
+  position: relative;
+  border: 1px solid #bbb;
+  padding-left: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-form .ficon .fa {
+  font-size: 18px;
+  background: #ffaf00;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 12px 0px;
+}
+
+.contact-form .box-icon .fa {
+  font-size: 18px;
+  background: #ffaf00;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 40px;
+  text-align: center;
+  padding: 48px 0px;
+}
+
+.contact-form #message {
+  padding-top: 10px;
+  height: 100px;
+}
+
+#submitButton {
+  width: 100%;
+  margin: auto;
+  background-color: #ffaf00;
+}
+
+#submitButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.success {
+  background: #fff none repeat scroll 0 0;
+  color: #50b948;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+.error {
+  background: #fff none repeat scroll 0 0;
+  color: #ff0000;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-area .contact-infos {
+  margin-bottom: 30px;
+}
+.address-box {
+  margin-bottom: 15px;
+  padding-left: 50px;
+}
+
+.address-box i.fa {
+  color: #ffaf00;
+  font-size: 20px;
+  line-height: 30px;
+  float: left;
+  width: 40px;
+  text-align: center;
+  margin-left: -50px;
+}
+
+.address-box p,
+.address-box p a {
+  color: inherit;
+  margin: 0;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-info i.fa {
+  color: #ffaf00;
+  font-size: 35px;
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.contact-info i.fa:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  margin-left: -35px;
+  height: 2px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #ffaf00;
+}
+
+.contact-info a {
+  color: inherit;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   17. Google Map area css
+* --------------------------------------------------------------------------------------- */
+#contactgoogleMap {
+  width: 100%;
+  height: 400px;
+}
+
+/* -------------------- footer copy-right --------------------*/
+.footer-area {
+  color: #ffaf00;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  padding: 60px 0px;
+  background-image: url(img/testimonial-bg.jpg);
+}
+
+.footer-area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footer {
+  position: relative;
+}
+
+.footer h2 {
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 55px;
+}
+span {
+  color: #ffaf00;
+}
+
+.footer p {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-links li a i {
+  color: #ffaf00;
+  font-size: 36px;
+  margin: 0 10px;
+  border: 1px solid #ffaf00;
+  width: 55px;
+  height: 55px;
+  padding: 10px 0px;
+}
+
+.social-links li a i:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.copyright-text {
+  padding: 30px 0px;
+  background: #2d3239;
+  color: #fff;
+}
+
+.copyright-text p {
+  margin: 0;
+}
+
+.copyright-text {
+  padding: 23px 0px;
+  background: #262626;
+  color: #bcbcbc;
+}
+
+.copyright-text p {
+  margin: 0;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   20. Back to top Button area css
+* --------------------------------------------------------------------------------------- */
+
+.top-button {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  background: #000;
+}
+
+.top-button .fa-angle-up {
+  font-size: 40px;
+  padding: 3px 0px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.top-button .fa-angle-up:hover {
+  color: #ffaf00;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   20. Blog Page Css
+* --------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------
+* Author        : Designcarebd
+* Template Name : Stamina | One Page Multipurpose Html Template
+* File          : Stamina blog CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+/* page header Css 
+-------------------------------------------------*/
+
+.page-title {
+  background-image: url(img/page-title-bg.jpg);
+  background-position: center center;
+  position: relative;
+  color: #fff;
+}
+
+.page-title:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 90px;
+}
+
+.page-title h2,
+.page-title p,
+.page-title a {
+  color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+.list-group {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.list-group li {
+  width: 47%;
+  margin-left: 3%;
+  float: left;
+  line-height: 35px;
+}
+
+.list-group li i.fa {
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+.video-area iframe {
+  width: 100%;
+  height: 320px;
+  border: medium none;
+}
+
+/* Blog slider Page 
+-------------------------------------------------*/
+
+.owl-slider .owl-controls,
+.news-carousel .owl-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.news-carousel:hover .owl-controls {
+  opacity: 1;
+}
+
+.owl-slider img {
+  width: 100%;
+}
+
+.owl-slider .owl-controls {
+  opacity: 1;
+}
+
+.owl-buttons {
+  opacity: 0.7;
+}
+
+.owl-buttons i.fa {
+  font-size: 25px;
+  color: #fff;
+  background-color: #8657bd;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+.owl-buttons i.fa:hover {
+  /*color: #333;*/
+  background-color: #333;
+}
+
+.owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  border: 1px solid #fff;
+  background: #fff;
+  float: left;
+}
+
+.owl-pagination {
+  width: 80px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.owl-page.active span {
+  border-color: #8657bd;
+  background: #8657bd;
+}
+
+.owl-controls .owl-buttons div {
+  font-size: 25px;
+  background: none;
+}
+
+.owl-prev {
+  float: left;
+}
+
+.owl-next {
+  float: right;
+}
+
+.news-carousel .owl-buttons {
+  margin: 0 15px;
+}
+
+.owl-client .owl-controls {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Blog Page 
+-------------------------------------------------*/
+
+.single-post {
+  margin-bottom: 50px;
+}
+
+.blog-content .single-post h3 {
+  margin-top: 15px;
+  color: #333;
+}
+.single-post h2 {
+  color: #000;
+}
+.featured-img {
+  position: relative;
+}
+
+.featured-img img {
+  width: 100%;
+}
+
+.featured-img .news-meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 40px;
+  width: 100%;
+  margin: 0;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.single-post p {
+  margin-bottom: 20px;
+}
+
+.single-post .btn {
+  margin-top: 10px;
+}
+.single-post .btn:hover {
+  background: #ffaf00;
+}
+
+.comment-form {
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.comment-form input[type="submit"] {
+  display: inline-block;
+  width: auto;
+  padding: 10px 30px;
+}
+
+/* Blog Page css 
+-----------------------------------------------*/
+.widget {
+  margin-bottom: 40px;
+}
+
+.widget ul {
+  margin-left: 20px;
+}
+
+.widget-recent-posts ul {
+  list-style: none;
+}
+.widget a {
+  color: inherit;
+}
+.widget a:hover {
+  color: #ffaf00;
+}
+
+/* Search widget css */
+.widget-search form {
+  position: relative;
+}
+
+.widget-search #s {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  padding: 10px 45px 10px 5px;
+  box-sizing: border-box;
+}
+
+.widget-search input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border: none;
+  background-color: #000;
+  background-image: url(img/search2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+input[type="submit"]:hover {
+  color: #fff;
+  background-color: #ffaf00;
+}
+
+.widget-search label {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  pointer-events: none;
+  left: 10px;
+  font-weight: 100;
+}
+
+.widget-search input:focus ~ label,
+.widget-search textarea:focus ~ label,
+.widget-search input:valid ~ label,
+.widget-search textarea:valid ~ label {
+  display: none;
+}
+
+/* Recent Posts Widget */
+.widget-recent-posts ul li {
+  margin-bottom: 20px;
+}
+
+.widget-recent-posts ul li:last-child {
+  margin-bottom: 0;
+}
+
+.widget-recent-posts ul li img {
+  float: left;
+  margin-right: 15px;
+  width: 80px;
+}
+
+.widget-recent-posts .post-details {
+  font-size: 12px;
+  color: #999;
+}
+
+.widget-recent-posts .post-details span {
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .widget-recent-posts ul li img {
+  }
+}
+
+/* Pagination css */
+.pagination > li > a {
+  color: #000;
+  font-weight: 500;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #e6e6e6;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #000;
+  border-color: #000;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span,
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-radius: 0px;
+}
+
+/*
+comments css
+--------------------------------*/
+/*------------------------------------------------------------------*/
+/* 12 Blog comments */
+/*------------------------------------------------------------------*/
+.comments-img {
+  float: left;
+  width: 120px;
+  height: 120px;
+}
+
+.comments-img img {
+  width: auto;
+  height: auto;
+}
+
+.post-short-text {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.comments ul {
+  margin: 0;
+  padding: 0;
+}
+.comments ul li .comment-box {
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding-bottom: 35px;
+}
+
+.comments ul li .comment-box .comment-content {
+  margin-left: 150px;
+}
+.comments ul li .comment-box .comment-content h4 {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+.comments ul li .comment-box .comment-content a {
+  color: #777777;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+}
+.comments ul li .comment-box .comment-content span {
+  color: #555555;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 5px;
+}
+.comments ul.depth .comment-box {
+  padding-left: 150px;
+}
+.comments ul li {
+  list-style: outside none none;
+}
+.comments ul li .comment-box .comment-content a:hover {
+  color: #1672d2;
+}
+
+.blog-preview .post-content {
+  padding: 25px 25px 50px;
+}
+
+@media (max-width: 767px) {
+  .comments ul.depth .comment-box {
+    padding-left: 50px;
+  }
+}
+
+.comments h2 {
+  margin-bottom: 50px;
+}
